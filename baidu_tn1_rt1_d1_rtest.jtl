@@ -1,0 +1,4 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1576317968016,174,HTTP Request,200,OK,Thread Group 1-1,text,true,,52535,249,1,1,http://www.zhihu.com/signin?next=%2F,99,0,64
+1576317968016,99,HTTP Request-0,302,Found,Thread Group 1-1,text,true,,795,117,1,1,http://www.zhihu.com/,99,0,64
+1576317968117,73,HTTP Request-1,200,OK,Thread Group 1-1,text,true,,51740,132,1,1,http://www.zhihu.com/signin?next=%2F,54,0,0

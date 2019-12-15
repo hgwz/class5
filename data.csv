@@ -1,0 +1,42 @@
+offset = 21 value = Message{messageId=19, messageBody='daaegaebfacdegbgdadeaecdafdfdegbbcfbcfeffaecefgccbffccegddfagecagcgdbfbbdddfgacgaccgecgeddbcefgeefbe', messageStatus='QA', messageCategory='Accepted', messageTime=1576320749462}
+offset = 22 value = Message{messageId=21, messageBody='fegcdfgdfceacbcdbbeagcecagggedeafaeccggfeagccdefcadedebggaedbbcffgaeggdfabagbgcddgcacbcefgaadcdeabcf', messageStatus='QA', messageCategory='Rejected', messageTime=1576320872154}
+offset = 23 value = {
+	"messageId":1,
+	"messageBody":"eabbgdaaabcdfeabffcdbagebgfebfbegdgdgaaffbbdedfbbeegfcgfgabfcdffdbdbbacabagfcdbebfgdaddeacegfgbfecdc",
+	"messageCategory":"QA",
+	"messageStatus":"Pending",
+	"messageTime":1576321009099
+	
+}
+offset = 24 value = {
+	"messageId":2,
+	"messageBody":"gcefadegbcadfdcdcdbegffecaefdcffbabgddcdgcacedfbedadfgeaebagddbgfbbfbfbdbecabccecaaffcegadagagggfgac",
+	"messageCategory":"DEV",
+	"messageStatus":"Accepted",
+	"messageTime":1576321055639
+	
+}
+offset = 25 value = {
+	"messageId":3,
+	"messageBody":"abedadgagcgdacaeacageeaccbeebacafcgefggdcacadgfdbgfbbecfbaabdbgcacgeccdefgbccaebcabddbebcggacbedfcgc",
+	"messageCategory":"QA",
+	"messageStatus":"Accepted",
+	"messageTime":1576321070529
+	
+}
+offset = 26 value = {
+	"messageId":4,
+	"messageBody":"baddebbefefaffgddgbcfdbfcffbagbbedgccedgfgfgdffebeebegfcbaaacbccccaedefgbgdegbcfaedgbdaeccfedffbfbce",
+	"messageCategory":"QA",
+	"messageStatus":"Processing",
+	"messageTime":1576321104093
+	
+}
+offset = 27 value = {
+	"messageId":5,
+	"messageBody":"gcfecccgccaabfccdgdaagfecadgceafedgddddffegbfdebeeebdbgbgececcfbfddcccdddagfbcfggfbafgdcbgfeffgbaeeb",
+	"messageCategory":"DEV",
+	"messageStatus":"Processing",
+	"messageTime":1576321161750
+	
+}
