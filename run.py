@@ -26,7 +26,7 @@ def setupJmx(jmx_prefix, threads_num, rampup_time, duration, remark, setHost=Fal
         lines = temp_stream.readlines()
         with open(os.path.join(current_dir, new_jmx_path), 'w') as new_stream:
             for line in lines:
-                new_line = line.replace('num_threads">1</stringProp>', 'num_threads">%s</stringProp>' % threads_num)
+                new_line = line.replace('$threads_num$', threads_num)
                 if setHost:
                     new_line = new_line.replace('<stringProp name="HTTPSampler.domain">www.baidu.com</stringProp>', '<stringProp name="HTTPSampler.domain">${__P(url,)}</stringProp>')
                 new_stream.write(new_line)
@@ -44,9 +44,9 @@ def runJmeterByCmd(new_jmx_dir, hostname='', ip=''):
                 break
         return result
     if hostname:
-        execute_cmd = 'jmeter -Jurl={1} -n -t {0}.jmx -l {0}.jtl -j {0}.log -e -o {0}/result/'.format(new_jmx_dir, hostname)
+        execute_cmd = 'jmeter -Jurl={1} -n -t {0}.jmx -l {0}.jtl -j {0}.log -f -e -o {0}/result/'.format(new_jmx_dir, hostname)
     else:    
-        execute_cmd = 'jmeter -n -t {0}.jmx -l {0}.jtl -j {0}.log -e -o {0}/result/'.format(new_jmx_dir)
+        execute_cmd = 'jmeter -n -t {0}.jmx -l {0}.jtl -j {0}.log -f -e -o {0}/result/'.format(new_jmx_dir)
     logger.info(execute_cmd)
     if isJmeterInstalled():
         os.system(execute_cmd)
